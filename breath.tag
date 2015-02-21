@@ -14,7 +14,7 @@
       <div class={ hidden: cycle.status == 'done' } >
         { cycle.action }
         <span class={ hidden: cycle.status != 'started' } >
-          ({ cycle.count } / 4)
+          ({ cycle.count } / { cycles })
         </span>
       </div>
     </h2>
@@ -25,9 +25,13 @@
   </div>
 
   <div class={ hidden: cycle.status != 'done'}>
-    <p class="bg-success">
-      <strong>That's it</strong>
-      You are done with the exercise. Do this exercise at leat twice a day.
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <strong>That's it</strong>
+      </div>
+      <div class="panel-body">
+        You are done with the exercise. Do this exercise at leat twice a day.
+      </div>
     </p>
 
   </div>
@@ -38,6 +42,8 @@
     status: 'waiting',
     current: ''
   };
+
+  this.cycles = 1;
 
   this.timer = {
     countdown: 'Waiting'
@@ -50,12 +56,13 @@
   }
 
   done() {
-    if(this.cycle.count < 4){
+    if(this.cycle.count < this.cycles ){
       this.cycle.count++;
       this.inhale();
     }
     else{
       this.cycle.status = 'done';
+      this.update();
     }
   }
 
