@@ -43,7 +43,7 @@
     current: ''
   };
 
-  this.cycles = 1;
+  this.cycles = 4;
 
   this.timer = {
     countdown: 'Waiting'
