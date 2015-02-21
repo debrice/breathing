@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breath Cycle</title>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script>html5.addElements('test')</script>
+  <![endif]-->
+
+  <!-- Breath application -->
+  <script src="/breath.tag" type="riot/tag"></script>
+
+  <!-- Riot and its compiler -->
+  <script src="/bower_components/riot/riot+compiler.min.js"></script>
+
+  <!-- Bootstrap compiled and minified CSS -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+  <!-- Bootstrap theme -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <style>
+    .counter{
+      font-size: 8em;
+    }
+    .counter.hold{
+      color: #EE8307;
+    }
+    .counter.inhale{
+      color: #08CCBE;
+    }
+
+    .counter.exhale{
+      color: #9EDBA3;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Breath cycle</h1>
+
+    <p class="well">
+      <strong>Exhale from your mouth</strong> and 
+      click the button to start the breathing guidance
+    </p>
+
+    <breath></breath>
+
+  </div>
+
+  <script>
+    riot.mount('breath');
+  </script>
+
+</body>
+
+</html>

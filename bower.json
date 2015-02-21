@@ -1,0 +1,26 @@
+{
+  "name": "breath-cycle",
+  "version": "0.0.0",
+  "authors": [
+    "Brice Leroy <bbrriiccee@gmail.com>"
+  ],
+  "description": "Guidance to appaising breathing cycles",
+  "main": "breath.tag",
+  "keywords": [
+    "breathing",
+    "riot"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.debrice.com/breathing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "riot": "~2.0.10"
+  }
+}
