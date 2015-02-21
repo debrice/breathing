@@ -7,6 +7,8 @@ regarding breathing to find relaxation and sleep called the
 * Don't do it more than 4 breathing cycle
 * Do those 4 breathing cycle twice a day
 
+Experience it http://www.debrice.com/breath/
+
 ## Cycles
 
 At the begining, exhale the air through your mouth
