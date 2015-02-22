@@ -13,7 +13,7 @@
     <h2 class="text-center">
       <div class={ hidden: cycle.status == 'done' } >
         { cycle.action }
-        <span class={ hidden: cycle.status != 'started' } >
+        <span class="small { hidden: cycle.status != 'started' }">
           ({ cycle.count } / { cycles })
         </span>
       </div>
